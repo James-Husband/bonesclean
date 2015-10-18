@@ -1,6 +1,15 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
+				<div id="inner-footer" class="container">
+
+					<address>
+			    	    <p>EMAIL: <a href="mailto:info@chyanalbanyhotel.com">info@chyanalbanyhotel.com</a><br>
+			            TEL 01736 796759</p>
+			    	    <p>CHY AN ALBANY HOTEL<br>
+		    	      	ALBANY TERRACE<br>
+			    	    ST IVES</br>
+			    	    TR26 2BS</p>
+					</address>
 
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
@@ -19,9 +28,12 @@
 					</nav>
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
+					<span>
+						Developed by Make Believe Media 
+					</span>
 				</div>
-
+				
+				
 			</footer>
 
 		</div>

@@ -35,6 +35,7 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
+
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
@@ -46,30 +47,35 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf">
+				<div id="headerTopBar">
+					<div class="container">
+						<div id="TopPanel">
+				    		<a href="https://www.facebook.com/pages/The-Chy-an-Albany-Hotel-Lighthouse-Bistro/1380526975501199" target="_blank"><i class="fa fa-facebook-square"></i></a>
+							<a href="https://twitter.com/Chy_an_Albany" target="_blank"><i class="fa fa-twitter-square"></i></a>
+							<a href="mailto:info@chyanalbanyhotel.com"><i class="fa fa-envelope-square"></i></a>
+				        	<a class="header-link" href="contact/"><i class="fa fa-cab"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="inner-header" class="container">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/site/chy-an-albany-hotel.png"></a></p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
-    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-
+						<ul>
+							<li>The Hotel</li>
+							<li>Accomodation</li>
+							<li>Lighthouse Bistro</li>
+							<li>Weddings &amp; Functions</li>
+							<li>Special Offers</li>
+							<li>Reservations</li>
+						</ul>
 					</nav>
 
 				</div>
